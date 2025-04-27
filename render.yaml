@@ -1,8 +1,6 @@
 services:
   - type: static
     name: podc-chatbot-frontend
-    buildCommand: |
-      mkdir -p dist
-      cp index.html script.js design.css dist/
-    publishDir: dist
+    buildCommand: echo "No build step needed"
+    staticPublishPath: .
     branch: main
